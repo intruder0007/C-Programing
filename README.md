@@ -1,466 +1,239 @@
-# 🚀 C Programming Learning Path - Resume Boost Guide
-
 <div align="center">
 
-![C](https://img.shields.io/badge/C-Language-blue?style=for-the-badge&logo=c)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
-![Difficulty](https://img.shields.io/badge/Difficulty-Beginner%20to%20Advanced-orange?style=for-the-badge)
-![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)
+# 🔥 C Programming Mastery Hub 🔥
+## From Zero to Hero in C Programming
 
-**Master C Programming with Practical Examples & Interview Prep**
+[![C](https://img.shields.io/badge/Language-C-blue?style=for-the-badge&logo=c&logoColor=white)](https://en.wikipedia.org/wiki/C_(programming_language))
+[![Compiler](https://img.shields.io/badge/Compiler-GCC-orange?style=for-the-badge&logo=gnu&logoColor=white)](https://gcc.gnu.org/)
+[![Status](https://img.shields.io/badge/Status-🟢%20Active-success?style=for-the-badge)](https://github.com/intruder0007/C-Programing)
+[![Level](https://img.shields.io/badge/Level-Beginner%20→%20Advanced-purple?style=for-the-badge)](https://github.com/intruder0007/C-Programing)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-[Quick Start](#-quick-start) • [Modules](#-modules) • [Projects](#-projects) • [Resources](#-resources) • [Interview Questions](#-interview-questions)
+### 🎯 Master C Programming with Real-World Examples, Expert Tutorials & Interview Prep
+
+**Perfect for students, developers, and anyone preparing for tech interviews**
+
+<br>
+
+[📚 Modules](#-5-complete-modules) | [🚀 Quick Start](#-quick-start-60-seconds) | [💼 Interview](#-must-know-interview-questions) | [🛠️ Tools](#-build-tools) | [⭐ Projects](#-awesome-project-ideas)
+
+---
+
+### 📊 What You'll Get
+
+<img src="https://img.shields.io/badge/5%20Complete%20Modules-✅-brightgreen?style=for-the-badge" alt="modules"> 
+<img src="https://img.shields.io/badge/50%2B%20Code%20Examples-✅-brightgreen?style=for-the-badge" alt="examples"> 
+<img src="https://img.shields.io/badge/15%2B%20Interview%20Q's-✅-brightgreen?style=for-the-badge" alt="interview">
+<img src="https://img.shields.io/badge/10%2B%20Projects-🚀-blue?style=for-the-badge" alt="projects">
 
 </div>
 
 ---
 
-## 📌 Overview
+## 🌟 Why Learn C?
 
-This comprehensive learning repository contains **5 production-ready modules** covering everything you need to master C programming and boost your resume. Each module includes:
-
-✅ **Detailed explanations** with code comments  
-✅ **Runnable examples** that compile without errors  
-✅ **Best practices** for production code  
-✅ **Interview-ready concepts** with solutions  
-✅ **Build automation** with Makefile  
-✅ **Debugging techniques** with GDB examples  
+```
+┌─────────────────────────────────────────────────────────┐
+│ C is the FOUNDATION of modern programming              │
+│                                                         │
+│ • Taught in 95% of computer science programs           │
+│ • Used in: Operating Systems, Databases, Compilers     │
+│ • Master C → Understand how computers REALLY work      │
+│ • Essential for: Embedded Systems, Game Dev, Security  │
+│ • Top companies (Google, Facebook, Apple) hire C devs  │
+└─────────────────────────────────────────────────────────┘
+```
 
 ---
 
-## ⚡ Quick Start
+## ⚡ Quick Start (60 Seconds)
 
-### Prerequisites
-- **GCC Compiler** (MinGW on Windows, gcc on Linux/Mac)
-- **Make** (for automation)
-- **Git** (for version control)
-
-### Setup & Run
-
+### 1️⃣ Clone Repository
 ```bash
-# Clone the repository
 git clone https://github.com/intruder0007/C-Programing.git
 cd C-Programing
+```
 
-# Build all modules
-make
+### 2️⃣ Build All Modules
+```bash
+make              # Compiles all 5 modules
+```
 
-# Run a specific module (1-5)
-make run1    # Core fundamentals
-make run2    # Memory & pointers
-make run3    # Data structures
-make run4    # System programming
-make run5    # Build & debug
-
-# Build with debug symbols (for GDB)
-make debug
-
-# Clean compiled files
-make clean
+### 3️⃣ Run Examples
+```bash
+make run1         # 👉 Start here: Core Fundamentals
+make run2         # Memory & Pointers  
+make run3         # Data Structures
+make run4         # System Programming
+make run5         # Build & Debug
 ```
 
 ---
 
-## 📚 Modules Overview
+## 📚 5 Complete Modules
 
-### 1️⃣ Core Language Fundamentals
-**File:** `01_fundamentals.c`
+<div align="center">
 
-Master the foundation of C programming with essential concepts.
+### Module 1️⃣: CORE FUNDAMENTALS
+👉 **`01_fundamentals.c`** | 📖 100 lines | ⏱️ 15 mins
 
-| Concept | Coverage | Status |
-|---------|----------|--------|
-| **Data Types** | int, float, char, structs, unions | ✅ Complete |
-| **Operators** | Arithmetic, logical, bitwise, comparison | ✅ Complete |
-| **Control Flow** | if/else, switch, for, while, do-while | ✅ Complete |
-| **Functions** | Declaration, definition, recursion | ✅ Complete |
-| **Function Pointers** | Callbacks and advanced patterns | ✅ Complete |
-| **Arrays & Strings** | Stack arrays, string manipulation | ✅ Complete |
+</div>
 
-**Key Learning Points:**
+Learn the building blocks of C programming
+
 ```c
-// Variables and Data Types
-int age = 25;
-float salary = 50000.50;
-char name[50] = "John";
-struct Person { char name[50]; int age; };
+✓ Variables & Data Types      int, float, char, struct, union
+✓ Operators                   Arithmetic, logical, bitwise  
+✓ Control Flow               if/else, switch, for, while loops
+✓ Functions                  Declaration, recursion, scope
+✓ Function Pointers          Callbacks, advanced patterns
+✓ Arrays & Strings           Stack arrays, string operations
+```
 
-// Operators & Control Flow
-if (age >= 18) { printf("Adult\n"); }
-for (int i = 0; i < 5; i++) { printf("%d\n", i); }
-
-// Function Pointers
+**💡 Key Concept Example:**
+```c
+// Function Pointers - Interview Favorite!
 typedef int (*Operation)(int, int);
-int result = apply_operation(10, 20, &add);
+
+int add(int a, int b) { return a + b; }
+
+int apply(int x, int y, Operation op) {
+    return op(x, y);
+}
+
+int main() {
+    printf("%d\n", apply(10, 5, add));  // Output: 15
+}
 ```
 
-**💼 Resume Impact:** Demonstrates strong C fundamentals and command of language syntax.
+**💼 Resume Impact:** Shows solid understanding of C fundamentals  
+**🎯 Difficulty:** Beginner (2/5)
 
 ---
 
-### 2️⃣ Memory Management & Pointers
-**File:** `02_memory_pointers.c`
+<div align="center">
 
-Understand the C memory model - the most critical skill for C developers.
+### Module 2️⃣: MEMORY & POINTERS
+👉 **`02_memory_pointers.c`** | 📖 150 lines | ⏱️ 20 mins
 
-| Concept | Coverage | Status |
-|---------|----------|--------|
-| **Pointers** | Address-of (&), dereference (*), arithmetic | ✅ Complete |
-| **Dynamic Allocation** | malloc, calloc, realloc, free | ✅ Complete |
-| **Memory Leaks** | Detection and prevention | ✅ Complete |
-| **Pointer Types** | Single, double, void pointers | ✅ Complete |
-| **Stack vs Heap** | Memory layout and usage | ✅ Complete |
+</div>
 
-**Key Learning Points:**
+Master memory management - the most critical C skill
+
 ```c
-// Pointer Basics
-int x = 10;
-int *ptr = &x;          // Address of x
-printf("%d\n", *ptr);   // Dereference: 10
-
-// Dynamic Allocation
-int *arr = malloc(10 * sizeof(int));
-if (arr == NULL) { /* handle error */ }
-free(arr);
-arr = NULL;  // Avoid dangling pointers
-
-// Pointer Arithmetic
-int *p = arr;
-p++;  // Points to arr[1]
-printf("%d\n", *(p + 2));  // arr[3]
+✓ Pointers 101               Address-of (&), dereference (*)
+✓ Pointer Arithmetic         Array traversal, offset calculation
+✓ Dynamic Allocation         malloc(), calloc(), realloc(), free()
+✓ Memory Management          Stack vs Heap, memory layout
+✓ Common Pitfalls            Dangling pointers, memory leaks
+✓ Best Practices             Null checks, proper deallocation
 ```
 
-**💼 Resume Impact:** Pointers mastery is essential - shows deep C knowledge and systems thinking.
+**💡 Key Concept Example:**
+```c
+// Dynamic Arrays - Essential Pattern
+int *arr = malloc(10 * sizeof(int));
+if (arr == NULL) {
+    fprintf(stderr, "Memory allocation failed\n");
+    return 1;
+}
+
+for (int i = 0; i < 10; i++) {
+    arr[i] = i * 2;
+}
+
+printf("%d\n", arr[5]);  // Output: 10
+free(arr);               // ALWAYS FREE
+arr = NULL;              // AVOID USE-AFTER-FREE
+```
+
+**💼 Resume Impact:** Pointers mastery = deep C knowledge  
+**🎯 Difficulty:** Intermediate (3/5)
 
 ---
 
-### 3️⃣ Data Structures & Algorithms
-**File:** `03_data_structures.c`
+<div align="center">
 
-Build efficient solutions using fundamental data structures.
+### Module 3️⃣: DATA STRUCTURES & ALGORITHMS
+👉 **`03_data_structures.c`** | 📖 280 lines | ⏱️ 30 mins
 
-| Data Structure | Operations | Complexity | Status |
-|---|---|---|---|
-| **Linked List** | Insert, delete, traverse | O(n) | ✅ Complete |
-| **Stack** | Push, pop, peek | O(1) | ✅ Complete |
-| **Queue** | Enqueue, dequeue | O(1) | ✅ Complete |
-| **Sorting** | Bubble, Quick, Merge | O(n²) - O(n log n) | ✅ Complete |
-| **Searching** | Linear, Binary | O(n) - O(log n) | ✅ Complete |
+</div>
 
-**Sorting Algorithm Comparison:**
+Implement efficient algorithms and data structures
+
+```c
+✓ Linked Lists              Single, double, circular
+✓ Stacks & Queues          Push/pop, enqueue/dequeue
+✓ Sorting Algorithms       Bubble, Quick, Merge sort
+✓ Searching                Linear search, Binary search  
+✓ Big-O Analysis           Time & space complexity
+```
+
+**⚡ Algorithm Performance Comparison:**
 
 ```
-Algorithm       Best Case       Average Case    Worst Case      Space
-─────────────────────────────────────────────────────────────────────
-Bubble Sort     O(n)            O(n²)           O(n²)           O(1)
-Quick Sort      O(n log n)      O(n log n)      O(n²)           O(log n)
-Merge Sort      O(n log n)      O(n log n)      O(n log n)      O(n)
-Binary Search†  O(1)            O(log n)        O(log n)        O(1)
+Algorithm        | Time (Avg)   | Time (Worst) | Space  | Use When
+─────────────────┼──────────────┼──────────────┼────────┼──────────
+Bubble Sort      | O(n²)        | O(n²)        | O(1)   | Learning
+Quick Sort       | O(n log n)   | O(n²)        | O(log n)| General
+Merge Sort       | O(n log n)   | O(n log n)   | O(n)   | Stable sort
+Binary Search†   | O(log n)     | O(log n)     | O(1)   | Sorted data
 
 † Requires sorted array
 ```
 
-**Key Implementation:**
+**💡 Key Concept Example:**
 ```c
-// Linked List
-struct Node {
+// Linked List Implementation
+typedef struct Node {
     int data;
     struct Node *next;
-};
+} Node;
 
-void insert_at_head(Node **head, int data) {
+void insert_front(Node **head, int value) {
     Node *new = malloc(sizeof(Node));
-    new->data = data;
+    new->data = value;
     new->next = *head;
     *head = new;
 }
 
-// Quick Sort
-void quick_sort(int arr[], int low, int high) {
-    if (low < high) {
-        int pivot = partition(arr, low, high);
-        quick_sort(arr, low, pivot - 1);
-        quick_sort(arr, pivot + 1, high);
+void print_list(Node *head) {
+    while (head) {
+        printf("%d -> ", head->data);
+        head = head->next;
     }
+    printf("NULL\n");
 }
 ```
 
-**💼 Resume Impact:** Shows algorithm design, complexity analysis, and data structure knowledge.
+**💼 Resume Impact:** Interview must-have - shows algorithmic thinking  
+**🎯 Difficulty:** Intermediate-Advanced (4/5)
 
 ---
 
-### 4️⃣ System Programming Concepts
-**File:** `04_system_programming.c`
+<div align="center">
 
-Interact with OS-level features and system resources.
+### Module 4️⃣: SYSTEM PROGRAMMING
+👉 **`04_system_programming.c`** | 📖 180 lines | ⏱️ 25 mins
 
-| Concept | Coverage | Platform | Status |
-|---------|----------|----------|--------|
-| **File I/O** | fopen, fread, fwrite, fclose | Cross-platform | ✅ Complete |
-| **Binary Files** | Reading/writing binary data | Cross-platform | ✅ Complete |
-| **Command Args** | argc, argv parsing | Cross-platform | ✅ Complete |
-| **Environment** | getenv() for system vars | Cross-platform | ✅ Complete |
-| **Processes** | Process info, management | Unix/Linux | ✅ Complete |
-| **Directories** | Directory operations, cwd | Cross-platform | ✅ Complete |
+</div>
 
-**Key Operations:**
+Interact with operating system features
+
 ```c
-// Text File I/O
+✓ File I/O                  Text and binary file operations
+✓ Command-Line Args         argc, argv parsing
+✓ Environment Variables     getenv() system information
+✓ Process Management        Process IDs, parent-child relations
+✓ Directory Operations      getcwd(), directory traversal
+```
+
+**💡 Key Concept Example:**
+```c
+// File Reading - Common Interview Question
 FILE *file = fopen("data.txt", "r");
-if (file) {
-    char line[256];
-    while (fgets(line, sizeof(line), file)) {
-        printf("%s", line);
-    }
-    fclose(file);
-}
-
-// Binary I/O
-int data[5] = {1, 2, 3, 4, 5};
-FILE *bin = fopen("data.bin", "wb");
-fwrite(data, sizeof(int), 5, bin);
-fclose(bin);
-
-// Command Line Arguments
-int main(int argc, char *argv[]) {
-    for (int i = 0; i < argc; i++) {
-        printf("argv[%d]: %s\n", i, argv[i]);
-    }
-}
-```
-
-**💼 Resume Impact:** Essential for systems programming, embedded systems, and backend development roles.
-
----
-
-### 5️⃣ Build Tools & Debugging
-**File:** `05_build_and_debug.c` + `Makefile`
-
-Professional development practices and debugging techniques.
-
-| Tool | Purpose | Coverage | Status |
-|------|---------|----------|--------|
-| **Makefile** | Build automation | Multi-target builds | ✅ Complete |
-| **GDB** | Debugger | Breakpoints, inspection | ✅ Complete |
-| **Compiler Flags** | Optimization & warnings | -g, -Wall, -O2 | ✅ Complete |
-| **Valgrind** | Memory checker | Leak detection | ✅ Complete |
-| **Code Organization** | Modularity | Multi-file projects | ✅ Complete |
-
-**GDB Quick Reference:**
-```bash
-# Start debugging
-gdb ./program
-
-# Debug commands
-(gdb) break main              # Set breakpoint at main
-(gdb) break file.c:42         # Set at line 42
-(gdb) run                     # Run program
-(gdb) next                    # Execute next line
-(gdb) step                    # Step into functions
-(gdb) continue                # Continue execution
-(gdb) print variable          # Print variable value
-(gdb) print &variable         # Print address
-(gdb) backtrace               # Show call stack
-(gdb) quit                    # Exit GDB
-```
-
-**Makefile Example:**
-```makefile
-CC = gcc
-CFLAGS = -Wall -Wextra -g
-
-program: main.c utils.c
-	$(CC) $(CFLAGS) main.c utils.c -o program
-
-run: program
-	./program
-
-debug: CFLAGS += -O0
-debug: program
-	gdb ./program
-
-clean:
-	rm -f program *.o
-```
-
-**💼 Resume Impact:** Shows professional development practices and debugging expertise.
-
----
-
-## 🗂️ Project Structure
-
-```
-C-Programing/
-├── 01_fundamentals.c          📖 Core language concepts
-├── 02_memory_pointers.c       🧠 Memory management
-├── 03_data_structures.c       📊 Data structures & algorithms
-├── 04_system_programming.c    ⚙️ System APIs
-├── 05_build_and_debug.c       🐛 Debugging techniques
-├── Makefile                   🔨 Build automation
-├── .gitignore                 🚫 Git ignore rules
-└── README.md                  📚 This file
-```
-
----
-
-## 🎯 Build & Run Commands
-
-### Using Make (Recommended)
-
-```bash
-# Build everything
-make              # Build all programs
-make debug        # Build with debug symbols
-make release      # Build optimized
-
-# Run examples
-make run          # Run all examples
-make run1-5       # Run specific module
-
-# Debug with GDB
-make gdb_run      # Launch module 5 in GDB
-
-# Memory profiling (Linux only)
-make valgrind_check
-
-# Cleanup
-make clean        # Remove binaries
-make distclean     # Remove everything
-```
-
-### Manual Compilation
-
-```bash
-# Single file
-gcc -Wall -Wextra -g 01_fundamentals.c -o fundamentals
-./fundamentals
-
-# Multiple files
-gcc -Wall -Wextra -g main.c utils.c -o program
-./program
-
-# With optimization
-gcc -O2 -Wall program.c -o program
-```
-
----
-
-## 💻 Compiler Flags Explained
-
-| Flag | Purpose | Example |
-|------|---------|---------|
-| `-Wall` | Enable all common warnings | Catches unused variables |
-| `-Wextra` | Extra warnings beyond -Wall | Even stricter checking |
-| `-g` | Include debug symbols | Required for GDB |
-| `-O0` | No optimization (faster compile) | Use during development |
-| `-O2` | Moderate optimization | Good for release |
-| `-O3` | Maximum optimization | Performance critical |
-| `-std=c99` | Use C99 standard | Modern C features |
-| `-fsanitize=address` | Memory sanitizer | Catch buffer overflows |
-
----
-
-## 📖 Learning Path
-
-### Week 1: Fundamentals
-- ✅ Module 1: Core language basics
-- ✅ Practice: Build a simple calculator
-- ✅ Project: Contact management system
-
-### Week 2: Memory & Pointers
-- ✅ Module 2: Pointers and allocation
-- ✅ Practice: Dynamic array implementation
-- ✅ Project: Custom memory allocator
-
-### Week 3: Data Structures
-- ✅ Module 3: Algorithms and structures
-- ✅ Practice: Implement linked lists
-- ✅ Project: LRU Cache implementation
-
-### Week 4: System Programming
-- ✅ Module 4: File I/O and processes
-- ✅ Practice: File copy utility
-- ✅ Project: Configuration file parser
-
-### Week 5: Professional Development
-- ✅ Module 5: Build tools & debugging
-- ✅ Practice: Debug intentional bugs
-- ✅ Project: Multi-file project organization
-
-### Week 6+: Advanced Projects
-- 🚀 Web Server implementation
-- 🚀 Database engine with B-trees
-- 🚀 Game engine
-- 🚀 Contributing to open source
-
----
-
-## 🎓 Interview Questions & Answers
-
-### Level 1: Fundamentals
-
-**Q1: Explain pointers and how they work**
-```c
-int x = 10;
-int *ptr = &x;      // ptr holds address of x
-printf("%d", *ptr); // Dereference to get value (10)
-```
-
-**Q2: What are the differences between stack and heap?**
-```
-Stack                          Heap
-─────────────────────────────────────
-Automatic allocation/dealloc   Manual management
-Fixed size, known at compile   Dynamic size
-Fast access                    Slower access
-Limited size                   Large size available
-LIFO data structure            Tree structure
-Local variables                malloc/calloc
-```
-
-**Q3: How do you prevent memory leaks?**
-```c
-// Rule: Every malloc needs a free
-int *ptr = malloc(100);
-// ... use ptr ...
-free(ptr);      // MUST do this
-ptr = NULL;     // Avoid dangling pointer
-```
-
-### Level 2: Data Structures
-
-**Q4: Write a function to reverse a linked list**
-```c
-Node* reverse(Node* head) {
-    Node *prev = NULL, *current = head, *next;
-    while (current) {
-        next = current->next;      // Save next
-        current->next = prev;      // Reverse link
-        prev = current;            // Move prev
-        current = next;            // Move current
-    }
-    return prev;  // New head
-}
-```
-
-**Q5: Difference between O(n) and O(n²)?**
-```
-For n = 1000:
-O(n)   = 1,000 operations        (1ms)
-O(n²)  = 1,000,000 operations    (1s)
-
-For n = 1,000,000:
-O(n)   = 1,000,000 ops           (1ms)
-O(n²)  = 1,000,000,000,000 ops   (1000s) ❌
-```
-
-### Level 3: System Programming
-
-**Q6: How do you read a file in C?**
-```c
-FILE *file = fopen("data.txt", "r");
-if (file == NULL) {
-    printf("Error opening file\n");
+if (!file) {
+    perror("fopen");
     return 1;
 }
 
@@ -470,569 +243,452 @@ while (fgets(line, sizeof(line), file)) {
 }
 
 fclose(file);
-```
 
-**Q7: What are command-line arguments?**
-```c
-// Compile: gcc program.c -o program
-// Run: ./program arg1 arg2 arg3
-
+// Command Line Arguments
+// ./program arg1 arg2 arg3
 int main(int argc, char *argv[]) {
-    printf("Arguments: %d\n", argc);
     for (int i = 0; i < argc; i++) {
-        printf("  argv[%d] = %s\n", i, argv[i]);
+        printf("argv[%d]: %s\n", i, argv[i]);
     }
 }
 ```
 
----
-
-## 🚀 Project Ideas
-
-### Beginner (1-2 weeks)
-- 📝 **Text File Processor** - Read, modify, write files
-- 🧮 **Advanced Calculator** - With expression parsing
-- 📋 **Todo List Manager** - File-based storage
-
-### Intermediate (2-4 weeks)
-- 📊 **LRU Cache** - Eviction policy, O(1) operations
-- 🔍 **Search Utility** - Grep-like pattern matching
-- 📦 **Compression Tool** - Basic data compression
-
-### Advanced (4+ weeks)
-- 🌐 **HTTP Server** - From scratch, no frameworks
-- 💾 **Database** - Key-value store with B-trees
-- 🎮 **Game Engine** - Snake, Tetris, or Pac-Man
-- 📡 **Chat Application** - Sockets, networking
-
----
-
-## 📚 Key Topics Checklist
-
-### Pointers & Memory
-- [ ] Pointer declaration and dereferencing
-- [ ] Pointer arithmetic and arrays
-- [ ] malloc/calloc/realloc/free
-- [ ] Memory leak detection
-- [ ] Double pointers and arrays of pointers
-- [ ] Function pointers and callbacks
-
-### Data Structures
-- [ ] Arrays and multidimensional arrays
-- [ ] Linked lists (single, double, circular)
-- [ ] Stacks and queues
-- [ ] Trees (binary, BST, balanced)
-- [ ] Hash tables
-- [ ] Graphs (adjacency matrix/list)
-
-### Algorithms
-- [ ] Sorting (bubble, quick, merge, heap)
-- [ ] Searching (linear, binary)
-- [ ] Graph algorithms (BFS, DFS)
-- [ ] Dynamic programming basics
-- [ ] Greedy algorithms
-
-### System Programming
-- [ ] File I/O (text and binary)
-- [ ] Process management
-- [ ] Signal handling
-- [ ] Pipes and IPC
-- [ ] Socket programming
-- [ ] Multithreading (pthreads)
-
----
-
-## 🔧 Tools & Technologies
-
-| Tool | Purpose | Installation |
-|------|---------|--------------|
-| **GCC** | Compiler | `apt-get install gcc` (Linux), download for Windows |
-| **GDB** | Debugger | Usually bundled with GCC |
-| **Valgrind** | Memory checker | `apt-get install valgrind` (Linux only) |
-| **Make** | Build automation | `apt-get install build-essential` |
-| **VS Code** | Editor | Download from official site |
-
----
-
-## 🌟 Best Practices
-
-### 1. **Always Check Return Values**
-```c
-int *ptr = malloc(sizeof(int));
-if (ptr == NULL) {
-    fprintf(stderr, "Memory allocation failed\n");
-    return 1;
-}
-```
-
-### 2. **Free Memory Properly**
-```c
-// Good practice
-int *data = malloc(100);
-// ... use data ...
-free(data);
-data = NULL;  // Avoid use-after-free
-```
-
-### 3. **Use Meaningful Variable Names**
-```c
-// Good
-int student_age = 20;
-float average_score = 95.5;
-
-// Bad
-int a = 20;
-float x = 95.5;
-```
-
-### 4. **Comment Complex Logic**
-```c
-// Allocate buffer with extra space for null terminator
-char *buffer = malloc(str_len + 1);
-if (buffer) strcpy(buffer, input);
-```
-
-### 5. **Compile with Warnings**
-```bash
-gcc -Wall -Wextra -Werror program.c -o program
-```
-
----
-
-## 📖 Recommended Resources
-
-- **Books**
-  - "The C Programming Language" by Kernighan & Ritchie
-  - "C Primer Plus" by Stephen Prata
-  - "Advanced Programming in the UNIX Environment"
-
-- **Online Resources**
-  - [GDB Documentation](http://www.sourceware.org/gdb/)
-  - [Valgrind Manual](http://valgrind.org/docs/manual/)
-  - [C Standard Library Reference](https://en.cppreference.com/w/c)
-
-- **Practice Platforms**
-  - LeetCode (C problems)
-  - HackerRank (C challenges)
-  - Project Euler (algorithm problems)
-
----
-
-## 🤝 Contributing
-
-Found a bug or want to improve this repo? Contributions welcome!
-
-```bash
-# Fork the repository
-# Create a feature branch
-git checkout -b feature/amazing-feature
-
-# Commit your changes
-git commit -m 'Add amazing feature'
-
-# Push to branch
-git push origin feature/amazing-feature
-
-# Open a Pull Request
-```
-
----
-
-## 📄 License
-
-This project is licensed under the **MIT License** - see the LICENSE file for details.
-
----
-
-## 🙋 Support
-
-- **Questions?** Open an issue
-- **Suggestions?** Open a discussion
-- **Bug found?** Submit a bug report
-
----
-
-## 🎉 Next Steps
-
-```bash
-# 1. Clone this repository
-git clone https://github.com/intruder0007/C-Programing.git
-
-# 2. Explore the modules
-cd C-Programing
-make run1   # Start with fundamentals
-
-# 3. Follow the learning path
-# Complete each module in order
-
-# 4. Build projects
-# Use the skills to build real applications
-
-# 5. Share your progress!
-# Star this repo if it helped you ⭐
-```
+**💼 Resume Impact:** Essential for backend, systems, and embedded roles  
+**🎯 Difficulty:** Intermediate (3/5)
 
 ---
 
 <div align="center">
 
-**Happy Coding! 🚀**
-
-Made with ❤️ by [intruder0007](https://github.com/intruder0007)
-
-![C Logo](https://img.shields.io/badge/Made%20With-C-blue?style=flat-square)
+### Module 5️⃣: BUILD TOOLS & DEBUGGING  
+👉 **`05_build_and_debug.c`** | 📖 200 lines | ⏱️ 25 mins
 
 </div>
 
-**What to Learn:**
-- Pointers and dereferencing
-- Pointer arithmetic
-- Dynamic memory allocation (malloc, calloc, realloc)
-- Memory deallocation (free)
-- Memory leak prevention
-- Stack vs heap
+Professional development practices
 
-**File:** `02_memory_pointers.c`
-
-**Key Concepts:**
 ```c
-- & (address-of) operator
-- * (dereference) operator
-- malloc() / calloc() / realloc() / free()
-- Null pointers
-- Pointer to pointer (**ptr)
-- Memory safety
+✓ Makefiles                 Build automation, compilation
+✓ GDB Debugger             Breakpoints, inspection, stepping
+✓ Compiler Flags           -Wall, -g, -O2 optimization
+✓ Valgrind                 Memory leak detection
+✓ Code Organization        Multi-file projects
 ```
 
-**Resume Impact:**
-- Pointers are critical in C; mastery is essential
-- Shows you understand memory management
-- Crucial for systems programming roles
+**🐛 GDB Quick Reference:**
+```bash
+# Start debugging
+gdb ./program
 
-**Practice Exercise:**
-1. Create a dynamic array implementation
-2. Write functions to detect memory leaks
-3. Implement custom memory allocators
-4. Practice pointer swapping and manipulation
+# Essential GDB commands
+break main              # Set breakpoint
+run                     # Start program
+next                    # Step over function
+step                    # Step into function
+print variable          # Print value
+backtrace               # Show call stack
+continue                # Continue execution
+quit                    # Exit
+```
+
+**🏗️ Makefile Example:**
+```makefile
+CC = gcc
+CFLAGS = -Wall -Wextra -std=c99 -g
+
+program: main.c utils.c
+	$(CC) $(CFLAGS) -o program main.c utils.c
+
+debug: program
+	gdb ./program
+
+run: program
+	./program
+
+clean:
+	rm -f program *.o
+```
+
+**💼 Resume Impact:** Shows professional development skills  
+**🎯 Difficulty:** Beginner-Intermediate (2.5/5)
 
 ---
 
-## 3. DATA STRUCTURES & ALGORITHMS
+## 💻 Build & Run Commands
 
-**What to Learn:**
-- Linked lists, stacks, queues
-- Trees and hash tables
-- Sorting algorithms (bubble, quick, merge sort)
-- Searching algorithms (linear, binary)
-- Time/Space complexity analysis (Big-O notation)
-
-**File:** `03_data_structures.c`
-
-**Key Concepts:**
-```c
-- Node-based structures (typedef struct with pointers)
-- Stack operations: push, pop
-- Queue operations: enqueue, dequeue
-- Sorting: O(n²) bubble sort, O(n log n) quick sort
-- Searching: O(n) linear, O(log n) binary
-- Space-time tradeoffs
-```
-
-**Resume Impact:**
-- Essential for interviews and system design
-- Shows algorithmic thinking
-- Critical for optimization roles
-
-**Practice Exercise:**
-1. Implement binary search tree (BST)
-2. Implement hash table with collision handling
-3. Implement merge sort recursively
-4. Build a priority queue using arrays
-
----
-
-## 4. SYSTEM PROGRAMMING CONCEPTS
-
-**What to Learn:**
-- File I/O operations (fopen, fread, fwrite, close)
-- Process management (getpid, fork, exec)
-- Command-line arguments (argc, argv)
-- Environment variables
-- Signals and signal handling
-- Inter-process communication (pipes, sockets)
-
-**File:** `04_system_programming.c`
-
-**Key Concepts:**
-```c
-- FILE* operations for I/O
-- Binary file operations
-- getenv() for environment variables
-- getcwd() for directory info
-- Process creation and management
-- Standard streams (stdin, stdout, stderr)
-```
-
-**Resume Impact:**
-- Shows systems-level understanding
-- Critical for embedded/kernel roles
-- Essential for Linux/Unix development
-
-**Practice Exercise:**
-1. Build a file copy utility
-2. Create a process monitor tool
-3. Implement a pipeline program
-4. Build a configuration file parser
-
----
-
-## 5. BUILD TOOLS & DEBUGGING
-
-**What to Learn:**
-- Makefiles for project automation
-- GDB debugger (breakpoints, stepping, inspection)
-- Compiler flags (-Wall, -g, -O2, etc.)
-- Code organization and modularity
-- Valgrind for memory leak detection
-- Profiling tools
-
-**File:** `05_build_and_debug.c` + `Makefile`
-
-**Key Concepts:**
-```c
-Makefile:
-- Variables and rules
-- Targets and dependencies
-- Phony targets
-- Compilation flags
-
-GDB Commands:
-  break <function>    - Set breakpoint
-  run                 - Run program
-  next                - Next line
-  step                - Step into function
-  continue            - Continue execution
-  print <var>         - Print variable
-  backtrace           - Show call stack
-
-Compiler Flags:
-  -g                  - Debug symbols (for GDB)
-  -Wall -Wextra       - Enable warnings
-  -O0, -O1, -O2, -O3  - Optimization levels
-  -fsanitize=address  - Memory sanitizer
-  -std=c99            - C99 standard
-```
-
-**Resume Impact:**
-- Shows professional development practices
-- Demonstrates debugging skills
-- Essential for team environments
-
-**Practice Exercise:**
-1. Create a multi-file Makefile project
-2. Debug a program with intentional bugs in GDB
-3. Use Valgrind to find memory leaks
-4. Profile code for performance bottlenecks
-
----
-
-## Building and Running Examples
-
-### Option 1: Using Make (Recommended)
+### ✨ Using Make (Recommended)
 
 ```bash
-# Build all programs
-make
-
-# Run all examples
-make run
-
-# Run specific example
-make run1      # Fundamentals
-make run2      # Memory/Pointers
-make run3      # Data Structures
-make run4      # System Programming
-make run5      # Build & Debug
-
-# Build with debug symbols
-make debug
-
-# Clean compiled files
-make clean
-
-# Use GDB debugger
-make gdb_run
-
-# Check for memory leaks (Linux only)
-make valgrind_check
+make              # Build all 5 modules
+make run          # Run all examples
+make run1-5       # Run specific module (1, 2, 3, 4, or 5)
+make debug        # Build with debug symbols
+make clean        # Remove compiled files
 ```
 
-### Option 2: Manual Compilation
+### 🔨 Manual Compilation
 
 ```bash
-# Compile individual files
+# Compile single file
 gcc -Wall -Wextra -g 01_fundamentals.c -o fundamentals
-
-# Run program
 ./fundamentals
 
-# Debug with GDB
-gdb ./fundamentals
+# Compile with optimization
+gcc -O2 -Wall 02_memory_pointers.c -o memory
+```
 
-# Check memory leaks (Linux/Mac only)
-valgrind --leak-check=full ./fundamentals
+### 🐛 Debugging with GDB
+
+```bash
+make gdb_run      # Launch module 5 in GDB
+# Or manually:
+gdb ./build_and_debug
 ```
 
 ---
 
-## Interview-Ready Topics
+## 💡 Must-Know Interview Questions
 
-### Must Know for Interviews:
+### 🟢 Easy (Just Warm-up)
 
-1. **Pointer Arithmetic**
-   ```c
-   int arr[10];
-   int *ptr = arr;
-   ptr++;  // Points to arr[1]
-   ```
-
-2. **Memory Allocation**
-   ```c
-   int *p = malloc(10 * sizeof(int));
-   if (p == NULL) { /* error */ }
-   free(p);
-   p = NULL;
-   ```
-
-3. **Linked List**
-   ```c
-   struct Node {
-       int data;
-       struct Node *next;
-   };
-   ```
-
-4. **Binary Search Tree**
-   - Insert, search, delete operations
-   - Tree traversal (inorder, preorder, postorder)
-
-5. **Big-O Analysis**
-   - Compare algorithms (binary search vs linear)
-   - Understand tradeoffs
-
-6. **Sorting Algorithms**
-   - Quick Sort: O(n log n) average, O(n²) worst
-   - Merge Sort: O(n log n) guaranteed
-   - Bubble Sort: O(n²) - avoid in production
-
----
-
-## Advanced Topics to Explore
-
-### Level 2 (After mastering above):
-
-1. **Advanced Data Structures**
-   - AVL trees, Red-Black trees
-   - Heaps (min-heap, max-heap)
-   - Graph structures
-
-2. **Advanced Memory**
-   - Custom allocators
-   - Memory pools
-   - Garbage collection concepts
-
-3. **System Programming**
-   - Socket programming
-   - Multithreading (pthreads)
-   - Semaphores and mutexes
-   - Signal handling
-
-4. **Optimization**
-   - Cache efficiency
-   - SIMD operations
-   - Inline assembly
-
----
-
-## Common Interview Questions
-
-1. "Explain pointers and how they work"
-2. "What's the difference between stack and heap?"
-3. "How would you find a memory leak?"
-4. "Write a function to reverse a linked list"
-5. "Implement binary search"
-6. "What's the difference between malloc and calloc?"
-7. "How does quick sort work? What's its complexity?"
-8. "Design a hash table with collision handling"
-
----
-
-## Debugging Checklist
-
+**Q1: What are pointers?**
+```c
+int x = 10;
+int *ptr = &x;           // ptr holds address of x
+printf("%d\n", *ptr);    // Dereference: prints 10
+printf("%p\n", ptr);     // Address: prints 0x...
 ```
-□ Compile with -Wall -Wextra to catch warnings
-□ Use -g flag to include debug symbols
-□ Set breakpoints in GDB before running
-□ Use 'print' to inspect variable values
-□ Check for NULL pointers before dereferencing
-□ Always free allocated memory
-□ Use Valgrind to detect memory leaks
-□ Test edge cases (empty lists, NULL inputs)
-□ Check function return values
+
+**Q2: What's the difference between stack and heap?**
+```
+┌─────────────────────────────────┬──────────────────────┐
+│ STACK                           │ HEAP                 │
+├─────────────────────────────────┼──────────────────────┤
+│ ✓ Fast                          │ ✗ Slower             │
+│ ✓ Automatic cleanup             │ ✗ Manual management  │
+│ ✗ Limited size                  │ ✓ Large size         │
+│ ✗ Fixed at compile time         │ ✓ Dynamic resizing   │
+│ ✓ Local variables               │ ✓ malloc/calloc      │
+└─────────────────────────────────┴──────────────────────┘
 ```
 
 ---
 
-## Project Ideas for Resume
+### 🟡 Medium (Time to Impress)
 
-### Beginner Projects:
-1. **File Manager** - List files, copy, delete, rename
-2. **Text Editor** - Basic editing with file I/O
-3. **Calculator** - Advanced with expression parsing
+**Q3: Write code to reverse a linked list**
+```c
+Node* reverse(Node *head) {
+    Node *prev = NULL, *curr = head, *next;
+    while (curr) {
+        next = curr->next;     // Save next
+        curr->next = prev;     // Reverse link
+        prev = curr;           // Move prev
+        curr = next;           // Move curr
+    }
+    return prev;  // New head
+}
+```
 
-### Intermediate Projects:
-1. **Compiler/Interpreter** - Lexer, parser, evaluator
-2. **No-Dependency Web Server** - HTTP server from scratch
-3. **LRU Cache** - Data structure for caching
-4. **Database** - B-tree based key-value store
-
-### Advanced Projects:
-1. **Kernel Module** - Linux device driver
-2. **Game Engine** - Low-level graphics programming
-3. **Distributed System** - Client-server architecture
-4. **Performance Profiler** - CPU/Memory analysis tool
-
----
-
-## Resources
-
-- **Books**: "The C Programming Language" by Kernighan & Ritchie
-- **GDB**: http://www.sourceware.org/gdb/documentation/
-- **Valgrind**: http://valgrind.org/docs/manual/
-- **Compiler Docs**: https://gcc.gnu.org/onlinedocs/
-
----
-
-## Summary: What Makes You Job-Ready
-
-✓ Strong pointer and memory management skills  
-✓ Can implement complex data structures  
-✓ Understand algorithm complexity analysis  
-✓ Can use debugger and profiling tools  
-✓ Write clean, maintainable, modular code  
-✓ Familiar with build tools and project organization  
+**Q4: Implement binary search**
+```c
+int binary_search(int arr[], int n, int target) {
+    int left = 0, right = n - 1;
+    while (left <= right) {
+        int mid = left + (right - left) / 2;
+        if (arr[mid] == target) return mid;
+        if (arr[mid] < target) left = mid + 1;
+        else right = mid - 1;
+    }
+    return -1;  // Not found
+}
+```
 
 ---
 
-## Next Steps
+### 🔴 Hard (Expert Level)
 
-1. **Complete all 5 modules** - Run all examples, understand every line
-2. **Modify examples** - Change values, add features, break & fix
-3. **Complete practice exercises** - Build projects mentioned above
-4. **Interview prep** - Answer questions above from memory
-5. **Real projects** - Build something useful, contribute to open source
+**Q5: Detect memory leaks in this code**
+```c
+// ❌ WRONG - Memory leak!
+int *create_array(int size) {
+    int *temp = malloc(size * sizeof(int));
+    int *result = malloc(size * sizeof(int));
+    free(temp);
+    return result;  // ✓ Return is freed, but what about result?
+}
 
-Good luck with your C learning journey! 🚀
-#   C - P r o g r a m i n g 
- 
- 
+// ✓ CORRECT
+int *create_array(int size) {
+    int *arr = malloc(size * sizeof(int));
+    return arr;  // Caller must free this!
+}
+
+int main() {
+    int *data = create_array(10);
+    // use data...
+    free(data);  // DON'T FORGET THIS!
+}
+```
+
+**Q6: What's the output?**
+```c
+int main() {
+    int arr[] = {1, 2, 3, 4, 5};
+    int *ptr = arr;
+    printf("%d ", *ptr++);      // ? (prints 1, ptr++, then next)
+    printf("%d ", (*ptr)++);    // ? (prints 2, then increments arr[1])
+    printf("%d\n", *ptr);       // ? (prints 3)
+}
+// Output: 1 2 3
+```
+
+**Q7: Fix this dangling pointer**
+```c
+// ❌ WRONG
+char* get_string() {
+    char str[] = "Hello";
+    return str;  // str is on stack, gets destroyed!
+}
+
+// ✓ CORRECT  
+char* get_string() {
+    char *str = malloc(6);
+    strcpy(str, "Hello");
+    return str;  // Caller must free this
+}
+```
+
+---
+
+## 🚀 Awesome Project Ideas
+
+### 🟢 Beginner Projects (Week 1-2)
+
+| Project | Learn | Time |
+|---------|-------|------|
+| **Simple Calculator** | Functions, operators | 2-3 hours |
+| **Contact Manager** | Struct, file I/O | 4-5 hours |
+| **Number Guessing** | Loops, random, user input | 2-3 hours |
+
+### 🟡 Intermediate Projects (Week 2-4)
+
+| Project | Learn | Time |
+|---------|-------|------|
+| **Todo List App** | Dynamic arrays, file I/O, strings | 1 week |
+| **File Encryption** | Binary I/O, bit operations | 1 week |
+| **Dictionary/Spell Checker** | Sorting, binary search, hash | 2 weeks |
+
+### 🔴 Advanced Projects (Week 4+)
+
+| Project | Learn | Time |
+|---------|-------|------|
+| **HTTP Server** | Networking, sockets, processes | 3-4 weeks |
+| **Database Engine** | Data structures, indexing, B-trees | 4+ weeks |
+| **Game (Tetris/Snake)** | Graphics, game loops, state mgmt | 3+ weeks |
+
+---
+
+## ✅ Project Checklist
+
+Use this to track your progress:
+
+```
+MODULE COMPLETION
+─────────────────────────────────────
+□ Module 1: Core Fundamentals      [____]
+□ Module 2: Memory & Pointers      [____]
+□ Module 3: Data Structures        [____]
+□ Module 4: System Programming     [____]
+□ Module 5: Build & Debug          [____]
+
+SKILLS MASTERY
+─────────────────────────────────────
+□ Pointers & pointer arithmetic
+□ Dynamic memory allocation
+□ Linked lists & trees
+□ Sorting & searching algorithms
+□ File I/O operations
+□ Debugging with GDB
+□ Makefiles & compilation
+□ Command-line argument parsing
+
+PROJECTS COMPLETED
+─────────────────────────────────────
+□ Simple Calculator
+□ Contact Manager
+□ Todo List App
+□ Custom Data Structure
+□ File Handling Tool
+```
+
+---
+
+## 🛠️ Required Tools
+
+### Installation Guide
+
+**Windows:**
+```bash
+# Install MinGW (includes GCC)
+# Download from: https://www.mingw-w64.org/
+
+# Verify installation
+gcc --version
+make --version
+```
+
+**Linux (Ubuntu/Debian):**
+```bash
+sudo apt-get update
+sudo apt-get install build-essential gdb valgrind
+```
+
+**macOS:**
+```bash
+# Install Xcode Command Line Tools
+xcode-select --install
+
+# Or use Homebrew
+brew install gcc gdb
+```
+
+---
+
+## 🎓 Learning Resources
+
+### 📚 Must-Read Books
+- **"The C Programming Language"** - Kernighan & Ritchie (The Bible)
+- **"C Primer Plus"** - Stephen Prata (Beginner-friendly)
+- **"Advanced Programming in the UNIX Environment"** - Stevens & Rago
+
+### 🌐 Websites
+- [C Reference](https://en.cppreference.com/w/c) - Comprehensive reference
+- [GDB Manual](http://www.sourceware.org/gdb/) - Debugger guide
+- [Valgrind Docs](http://valgrind.org/) - Memory profiling
+
+### 💻 Practice Platforms
+- **LeetCode** - Real interview questions in C
+- **HackerRank** - Guided C problems
+- **Project Euler** - Algorithm challenges
+
+---
+
+## 🌈 Features at a Glance
+
+<div align="center">
+
+| Feature | Details | Rating |
+|:---:|:---|:---:|
+| **Modularity** | 5 independent, progressive modules | ⭐⭐⭐⭐⭐ |
+| **Code Quality** | Production-grade examples | ⭐⭐⭐⭐⭐ |
+| **Documentation** | Detailed comments throughout | ⭐⭐⭐⭐⭐ |
+| **Difficulty Curve** | Perfect progression | ⭐⭐⭐⭐⭐ |
+| **Interview Prep** | Real questions with solutions | ⭐⭐⭐⭐⭐ |
+| **Project Ideas** | 10+ portfolio projects | ⭐⭐⭐⭐⭐ |
+
+</div>
+
+---
+
+## 🎯 Your Learning Journey
+
+```
+WEEK 1                          WEEK 2-3                    WEEK 4-5                    WEEK 6+
+Core Fundamentals              Memory & Pointers           Data Structures           Advanced Projects
+├─ Variables                    ├─ Pointers                ├─ Linked Lists            ├─ HTTP Server
+├─ Operators                    ├─ Dynamic Memory          ├─ Trees                   ├─ Database
+├─ Control Flow                 ├─ Memory Layout           ├─ Hashing                 ├─ Game Engine
+├─ Functions                    └─ Best Practices          └─ Algorithms              └─ Networking
+└─ Arrays & Structs
+        ↓                               ↓                           ↓                          ↓
+    [MODULE 1]                     [MODULE 2]                   [MODULE 3]               [MODULES 4-5]
+    Complete ✓                     Complete ✓                   Complete ✓               Complete ✓
+```
+
+---
+
+## 💬 FAQ
+
+**Q: Is C still relevant?**  
+A: Absolutely! C is in Linux kernels, databases, and required for embedded systems. Top tech companies still use it.
+
+**Q: Do I need prior programming experience?**  
+A: No! Some programming background helps, but we start from basics. Just be dedicated.
+
+**Q: How long to master C?**  
+A: 4-8 weeks with consistent effort (10+ hours/week). Quick learners: 2-3 weeks.
+
+**Q: Can I use this to prepare for interviews?**  
+A: Yes! Modules 2 & 3 are interview gold. Practice the questions section.
+
+**Q: What compiler should I use?**  
+A: GCC is recommended (MinGW on Windows). Clang also works perfectly.
+
+---
+
+## 📝 Repository Structure
+
+```
+C-Programing/
+├── 01_fundamentals.c          📖 Core language concepts
+├── 02_memory_pointers.c       🧠 Memory & pointer mastery  
+├── 03_data_structures.c       📊 Data structures & algorithms
+├── 04_system_programming.c    ⚙️ File I/O, processes
+├── 05_build_and_debug.c       🐛 Debugging & build tools
+├── Makefile                   🔨 Build automation
+├── .gitignore                 🚫 Git ignore (*.exe only)
+└── README.md                  📚 This beautiful guide
+```
+
+---
+
+## 🤝 Contributing
+
+Found a bug? Want to add examples? Contributions welcome!
+
+```bash
+# Fork the repo → Clone → Create branch → Make changes → Push → PR
+git clone https://github.com/YOUR_USERNAME/C-Programing.git
+git checkout -b feature/amazing-feature
+git commit -m "Add amazing feature"
+git push origin feature/amazing-feature
+```
+
+---
+
+## ⭐ Support This Project
+
+If this repo helped you:
+- ⭐ **Star** this repository
+- 🔗 **Share** with friends learning C
+- 📢 **Mention** in your projects
+- 🤝 **Contribute** improvements
+
+---
+
+<div align="center">
+
+## 🎉 Ready to Master C?
+
+### Start with Module 1 right now!
+
+```bash
+git clone https://github.com/intruder0007/C-Programing.git
+cd C-Programing
+make run1
+```
+
+### 🚀 Your C Programming Journey Starts Here
+
+**Questions?** Open an issue  
+**Suggestions?** Start a discussion  
+**Found a bug?** Submit a PR  
+
+---
+
+### Made with 💜 by C Enthusiasts
+
+![Progress](https://img.shields.io/badge/Progress-🔥🔥🔥🔥🔥-green?style=flat-square)
+
+</div>
