@@ -687,7 +687,7 @@ make run1
 
 ---
 
-### Made with 💜 by C Enthusiasts
+### Made with 💜 by Intruder
 
 ![Progress](https://img.shields.io/badge/Progress-🔥🔥🔥🔥🔥-green?style=flat-square)
 
